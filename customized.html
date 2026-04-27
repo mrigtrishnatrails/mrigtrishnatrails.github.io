@@ -4,41 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Terms & Conditions - Mrigtrishna Trails</title>
+<title>Customized Trips - Mrigtrishna Trails</title>
 
-<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-<!-- Custom CSS -->
 <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-<!-- 🔝 NAVBAR (same as index) -->
+<!-- 🔝 NAVBAR -->
 <header>
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar shadow-sm sticky-top">
 <div class="container">
 
 <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-<img src="images/logo.png" height="50" class="me-2">
-<span class="brand-text">Mrigtrishna Trails</span>
+    
+    <img src="images/logo.png" alt="Logo" height="50" class="me-2">
+    
+    <span class="brand-text">Mrigtrishna Trails</span>
+
 </a>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
 <span class="navbar-toggler-icon"></span>
 </button>
 
 <div class="collapse navbar-collapse" id="nav">
 <ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="itinerary.html">Upcoming Trips</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Customised Trips</a></li>
-<li class="nav-item"><a class="nav-link" href="payment.html">About Us</a></li>
-<li class="nav-item"><a class="nav-link" href="payment.html">Subscribe</a></li>
+
+<li class="nav-item">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="itinerary.html">Upcoming Trips</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="customized.html">Customised Trips</a>
+</li>
+
+
+
+<li class="nav-item">
+<a class="nav-link" href="payment.html">About Us</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="payment.html">Subscribe</a>
+</li>
+
 </ul>
 </div>
 
@@ -46,64 +63,91 @@
 </nav>
 </header>
 
-<!-- 📜 HERO -->
+<!-- 🌄 HERO -->
 <section class="blog-hero text-white text-center">
 <div class="overlay">
 <div class="container">
-<h1 class="display-4 fw-bold">Terms & Conditions</h1>
-<p class="lead">Please read these terms carefully before booking</p>
+<h1 class="display-4 fw-bold">Customize Your Journey</h1>
+<p class="lead">Tell us your dream trip — we’ll craft it for you</p>
 </div>
 </div>
 </section>
 
-<!-- 📄 CONTENT -->
+<!-- 🧭 MAIN SECTION -->
 <section class="container my-5">
 
-<h4 class="fw-bold">1. Booking & Payments</h4>
+<div class="row">
+
+<!-- LEFT CONTENT -->
+<div class="col-md-6">
+
+<h2 class="fw-bold mb-4">Ready to create your own journey?</h2>
+
 <p>
-All bookings must be confirmed with full or partial payment. Prices are subject to change
-based on availability, season, and operational conditions.
+Start by filling this quick form to help us understand your preferences,
+group size, travel style, and destination ideas.
 </p>
 
-<h4 class="fw-bold mt-4">2. Cancellation Policy</h4>
 <p>
-Cancellations must be made in advance. Refunds (if applicable) depend on timing and vendor policies.
-Last-minute cancellations may not be refundable.
+The more details you share, the better we can design a perfect experience —
+whether it’s a private Himalayan trek, a relaxing nature retreat,
+or a unique adventure.
 </p>
 
-<h4 class="fw-bold mt-4">3. Travel Responsibility</h4>
+<hr>
+
+<h5 class="fw-bold mt-4">Prefer to talk directly?</h5>
+
 <p>
-Participants are responsible for their own health, safety, and belongings during the trip.
-Mrigtrishna Trails is not liable for personal loss or injury.
+📞 Call/WhatsApp: <strong>+91-97173-69295</strong><br>
+📧 Email: mail@mrigtrishna.com
 </p>
 
-<h4 class="fw-bold mt-4">4. Itinerary Changes</h4>
 <p>
-We reserve the right to modify itineraries due to weather, safety, or unforeseen conditions.
+We’ll guide you step by step.
 </p>
 
-<h4 class="fw-bold mt-4">5. Code of Conduct</h4>
-<p>
-Travelers must respect local culture, environment, and fellow participants.
-Misconduct may lead to removal from the trip without refund.
-</p>
+</div>
 
-<h4 class="fw-bold mt-4">6. Liability</h4>
-<p>
-We act as a facilitator for travel experiences. Third-party services (transport, hotels)
-are governed by their own policies.
-</p>
+<!-- RIGHT FORM -->
+<div class="col-md-6">
 
-<h4 class="fw-bold mt-4">7. Contact</h4>
-<p>
-For any queries, contact us at:<br>
-📧 mail@mrigtrishna.com<br>
-📞 +91-97173-69295
-</p>
+<form id="customTripForm">
 
+<input type="text" id="name" class="form-control mb-3" placeholder="Your Name *" required>
+
+<input type="email" id="email" class="form-control mb-3" placeholder="Your Email *" required>
+
+<input type="text" id="destination" class="form-control mb-3" placeholder="Preferred Destination(s) *" required>
+
+<input type="text" id="dates" class="form-control mb-3" placeholder="Preferred Dates / Season">
+
+<select id="groupType" class="form-control mb-3">
+<option>Friends / Family</option>
+<option>Couple</option>
+<option>Corporate</option>
+<option>School / College</option>
+</select>
+
+<input type="number" id="people" class="form-control mb-3" placeholder="Group Size *" required>
+
+<input type="text" id="phone" class="form-control mb-3" placeholder="WhatsApp Number">
+
+<textarea id="message" class="form-control mb-3" rows="4"
+placeholder="Share your travel ideas, goals, preferences..."></textarea>
+
+<button type="button" onclick="sendCustomTrip()" class="btn btn-dark w-100">
+Start the Conversation
+</button>
+
+</form>
+
+</div>
+
+</div>
 </section>
 
-<!-- 🔻 FOOTER (same as index) -->
+<!-- 🔻 FOOTER -->
 <footer class="footer text-white pt-5 pb-3">
 <div class="container">
 
