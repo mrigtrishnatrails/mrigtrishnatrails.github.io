@@ -112,5 +112,62 @@ function toggleReadMorenaturerishi(btn) {
         btn.innerText = "Read More →";
     }
 
-    
+
+    // ✅ Countdown Timer (GLOBAL)
+    window.onload = function () {
+
+        const timerEl = document.getElementById("timer");
+
+    // If timer not present, don't run
+        if (!timerEl) return;
+
+        const launchDate = new Date("2026-06-15T00:00:00").getTime();
+
+        const timer = setInterval(function () {
+
+            let now = new Date().getTime();
+            let distance = launchDate - now;
+
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+            timerEl.innerHTML = `${days}d ${hours}h ${minutes}m`;
+
+            if (distance < 0) {
+                clearInterval(timer);
+                timerEl.innerHTML = "We Are Live 🎉";
+            }
+
+        }, 1000);
+    };
 }
+
+// ✅ Countdown Timer (GLOBAL)
+window.onload = function () {
+
+    const timerEl = document.getElementById("timer");
+
+    // If timer not present, don't run
+    if (!timerEl) return;
+
+    const launchDate = new Date("2026-06-15T00:00:00").getTime();
+
+    const timer = setInterval(function () {
+
+        let now = new Date().getTime();
+        let distance = launchDate - now;
+
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        timerEl.innerHTML = `${days}d ${hours}h ${minutes}m`;
+
+        if (distance < 0) {
+            clearInterval(timer);
+            timerEl.innerHTML = "We Are Live 🎉";
+        }
+
+    }, 1000);
+};

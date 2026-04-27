@@ -144,7 +144,9 @@ h2 {
     background: rgba(0,0,0,0.5);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 .rishikesh-hero {
@@ -157,7 +159,9 @@ h2 {
     background: rgba(0,0,0,0.5);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
 }
 .kashmir1-hero {
     height: 50vh;
@@ -169,7 +173,9 @@ h2 {
     background: rgba(0,0,0,0.5);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 /* Blog Cards */
@@ -221,7 +227,9 @@ h2 {
     background: rgba(0,0,0,0.5);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
 }
 .kashmir-hero {
     height: 60vh;
@@ -233,7 +241,9 @@ h2 {
     background: rgba(0,0,0,0.5);
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
 }
 
 /* Card Container */
@@ -522,4 +532,54 @@ form button {
 .booking-section .btn {
     border-radius: 10px;
     font-weight: bold;
+}
+
+/* Coming Soon Hero */
+.coming-hero {
+    height: 100vh;
+    background: url('../images/feature1.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Email Box */
+.email-box {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Countdown */
+.countdown h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* Button polish */
+.btn-success {
+    border-radius: 12px;
+}
+
+
+body {
+    background-color: #fff;
+}
+
+h1, h2 {
+    letter-spacing: 1px;
+}
+
+.btn-warning {
+    background-color: #d4af37;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #b8962e;
 }
